@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>表單</title>
+	<link rel="stylesheet" href="style.css">
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.1/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+	
+	<script src="https://cdn.staticfile.org/jquery/3.6.0/jquery.min.js"></script>
+		
+</head>
+<body>
+	<table class="table table-hover">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">學生學號</th>
+				<th scope="col">學生成績</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td><input class="stuNo"    type="text" placeholder="學號"></td>
+				<td><input class="stuScore s-1" type="text" placeholder="成績">分</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td><input class="stuNo"    type="text" placeholder="學號"></td>
+				<td><input class="stuScore s-2" type="text" placeholder="成績">分</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td><input class="stuNo"    type="text" placeholder="學號"></td>
+				<td><input class="stuScore s-3" type="text" placeholder="成績">分</td>
+			</tr>
+			<tr>
+				<th scope="row">4</th>
+				<td><input class="stuNo"    type="text" placeholder="學號"></td>
+				<td><input class="stuScore s-4" type="text" placeholder="成績">分</td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td><input class="stuNo"    type="text" placeholder="學號"></td>
+				<td><input class="stuScore s-5" type="text" placeholder="成績">分</td>
+			</tr>
+		</tbody>
+		<thead class="other">
+			<tr>
+				<th colspan="2" scope="row">平&emsp;均</th>
+				<td><p id="average"></p>分</td>
+			</tr>
+			<tr>
+				<th colspan="2" scope="row">最高分</th>
+				<td><p id="best"></p>分</td>
+			</tr>
+			<tr>
+				<th colspan="2" scope="row">最低分</th>
+				<td><p id="low"></p>分</td>
+			</tr>
+			<tr>
+				<th colspan="2" scope="row">加分到全班及格</th>
+				<td><p id="add" style="font-size: 12px;"></p>分</td>
+			</tr>
+		</thead>
+	</table>
+	<div class="info">
+		<p id="warning"></p>
+		<button class="btn btn-primary" onclick="return check(this)">提&emsp;交</button>
+	</div>
+</body>
+
+<script src="style.js"></script>
+
+</html>

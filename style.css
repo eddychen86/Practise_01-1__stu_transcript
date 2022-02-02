@@ -1,0 +1,106 @@
+/* Global */
+*{
+    box-sizing: border-box;
+    font-family: '微軟正黑體';
+    position: relative;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+    border: 4px solid orange;
+    height: 100%;
+}
+
+th{
+    vertical-align: middle;
+}
+
+
+.title{
+    font-size: 1.5cm;
+    -webkit-text-stroke: 1px;
+    padding: 50px;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+}
+
+.table{
+	background-color: #fcfcfc;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid;
+	border-bottom: 5px solid;
+    overflow: hidden;
+
+}
+
+/* input */
+input{
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+.stuNo, .stuScore{
+    width: 200px;
+    display: inline-block;
+    
+    margin: 5px;
+    padding: 2px 5px 2px 5px;
+}
+.stuScore{
+    width: 100px;
+}
+.arr{
+	text-align-last: left;
+	vertical-align: middle;
+}
+#average, #best, #low, #add{
+	display: inline-block;
+	border-radius: 5px;
+	height: 0.8cm;
+	width: 100px;
+	margin: 0;
+	margin-right: 5px;
+	vertical-align: middle;
+	border: 1px solid grey;
+}
+.other td{
+    float: right;
+    margin-right: 13px;
+}
+.info{
+	border-top: 1px solid;
+	width: 450px;
+	padding-top: 10px;
+	padding-left: 60px;
+	margin-top: 20px;
+	vertical-align: middle;
+	left: 50%;
+	transform: translate(-50%,50%);
+}
+
+
+#warning{
+/*     border: 1px solid; */
+	width: 300px;
+	height: 1cm;
+    margin: 0;
+	padding: 5px;
+	text-align: center;
+	vertical-align: middle;
+	float: right;
+	color: red;
+	font-weight: 900;
+	letter-spacing: 5px;
+}
+button{
+    display: inline-block;
+    margin: 0;
+    border-radius: 50px;
+}
